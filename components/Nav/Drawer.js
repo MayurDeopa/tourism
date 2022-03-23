@@ -22,7 +22,7 @@ const Drawer =({state})=>{
                 </li>
             </Link>
                 <Link href={'/user/wishlist'}>
-                    <li  onClick={setHidden(true)}>
+                    <li>
                         <div className='med_svg'>
                             <BiHeart/>
                         </div>
@@ -30,7 +30,7 @@ const Drawer =({state})=>{
                     </li>
                 </Link>
                 <Link href={'/user/visited'}>
-                    <li  onClick={setHidden(true)}>
+                    <li>
                         <div className='med_svg'>
                             <BiWalk/>
                         </div>
