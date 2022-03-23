@@ -5,6 +5,7 @@ import { login } from '../lib/api/auth'
 import {useRouter} from 'next/router'
 import jwt from 'jsonwebtoken'
 import '../styles/globals.css'
+import PrimaryLoader from '../components/loaders/PrimaryLoader'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
@@ -39,9 +40,9 @@ function MyApp({ Component, pageProps }) {
       userState:[user,setUser],
       imageState:[randomImage,setRandomImage]
     }}>
-     {isLoading?<h1>Loading...</h1>: <Component {...pageProps} />}
+     {isLoading?<PrimaryLoader/>: <Component {...pageProps} />}
     </ContextWrapper>
   )
 }
 
-export default MyApp
+export default MyApp;
