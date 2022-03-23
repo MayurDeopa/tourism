@@ -12,7 +12,7 @@ const Drawer =({state})=>{
             <div className={styles.header}>
                 <FaWpexplorer/>
             </div>
-            <ul className={styles.ul}>
+            <ul className={styles.ul} onClick={setHidden(true)}>
             <Link href={'/user'}>
                 <li>
                     <div className='med_svg'>
