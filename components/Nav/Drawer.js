@@ -12,7 +12,7 @@ const Drawer =({state})=>{
             <div className={styles.header}>
                 <FaWpexplorer/>
             </div>
-            <ul className={styles.ul} onClick={setHidden(true)}>
+            <ul className={styles.ul}>
             <Link href={'/user'}>
                 <li>
                     <div className='med_svg'>
@@ -22,7 +22,7 @@ const Drawer =({state})=>{
                 </li>
             </Link>
                 <Link href={'/user/wishlist'}>
-                    <li>
+                    <li  onClick={setHidden(true)}>
                         <div className='med_svg'>
                             <BiHeart/>
                         </div>
@@ -30,7 +30,7 @@ const Drawer =({state})=>{
                     </li>
                 </Link>
                 <Link href={'/user/visited'}>
-                    <li>
+                    <li  onClick={setHidden(true)}>
                         <div className='med_svg'>
                             <BiWalk/>
                         </div>
