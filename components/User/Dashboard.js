@@ -8,7 +8,7 @@ import NavToggle from "../NavToggle"
 
 const Dashboard =({children})=>{
     const router = useRouter()
-    const [hidden,setHidden] = useState(false)
+    const [hidden,setHidden] = useState(true)
     const {userState} = useContext(App)
     const [user,setUser] = userState
     useEffect(()=>{

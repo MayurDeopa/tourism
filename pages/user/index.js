@@ -38,8 +38,7 @@ const MainPage =()=>{
                                 <BiSearch/>
                             </div>
                     </div>
-                    {!isFetching
-                    ?
+                    {
                     err
                     ?
                     <h2>{err}</h2>
@@ -47,13 +46,12 @@ const MainPage =()=>{
                     randomImage.map((i)=>{
                         return <ImageComponent details={i} key={i._id}/>
                     })
-                    :
-                    <h2>Loading...</h2>}
+                    }
                     {
                         isFetching
                         ?
                         <div className="await_button">
-                            <h3>Generate Random </h3>
+                            <h3>Generating </h3>
                         </div>
                         :
                         <div 

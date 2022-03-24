@@ -13,7 +13,7 @@ const ImageComponent =({details})=>{
     return (
         <div className={styles.container}>
             <div className={styles.image_wrapper}>
-                <Image src={details.url} height={300} width={600}/>
+                <Image src={details.url} height={600} width={1300}/>
             </div>
             <div className={styles.details}>
                 <h2>{details.name}</h2>

@@ -100,6 +100,7 @@ a {
   color: var(--secondary-color);
   border-radius: 50%;
   cursor: pointer;
+  z-index: 500;
 }
 
 .nav_toggle:hover{
