@@ -34,7 +34,9 @@ const ImageComponent =({details})=>{
                     image:details
                 })}
                 >
+                    <div className={styles.svg}>
                     <BiHeart/>
+                    </div>
             </div>
         </div>
     )
